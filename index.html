@@ -7,32 +7,43 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     body {
-      background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png'); /* subtle Chinese-inspired pattern */
-      background-color: #fff5f5; /* light red background */
+  
+      background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.vecteezy.com%2Ffree-vect%Fred-chinese-background&psig=AOvVaw0KOdPRFdoX2hLUWaHa91SS&ust=1756219057082000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCPi4svqXpo8DFQAAAAAdAAAAABAS');
+      background-color: #fffdf5; /* soft off-white for balance */
+    }
+    /* Fade-in animation */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .fade-in {
+      animation: fadeInUp 1s ease-out forwards;
     }
   </style>
 </head>
-<body class="font-sans text-gray-800">
+<body class="font-sans text-gray-900">
 
   <!-- Header -->
-  <header class="bg-red-700 text-white p-6 shadow-lg">
+  <header class="bg-red-700 text-white p-6 shadow-lg border-b-4 border-yellow-400">
     <nav class="container mx-auto flex justify-around items-center">
-      <h1 class="text-2xl font-bold tracking-wide">Bell Church Athletic Club</h1>
-      <ul class="flex space-x-8 text-lg font-medium">
-        <li><a href="#" class="hover:text-yellow-300">Home</a></li>
-        <li><a href="#" class="hover:text-yellow-300">About</a></li>
-        <li><a href="#" class="hover:text-yellow-300">Performances</a></li>
-        <li><a href="#" class="hover:text-yellow-300">Contact</a></li>
+      <h1 class="text-3xl font-extrabold tracking-wide text-yellow-300 drop-shadow-lg">
+        Bell Church Athletic Club
+      </h1>
+      <ul class="flex space-x-8 text-lg font-semibold">
+        <li><a href="#" class="hover:text-yellow-400 transition">Home</a></li>
+        <li><a href="#" class="hover:text-yellow-400 transition">About</a></li>
+        <li><a href="#" class="hover:text-yellow-400 transition">Performances</a></li>
+        <li><a href="#" class="hover:text-yellow-400 transition">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- Hero Section -->
   <section class="bg-gradient-to-r from-red-600 to-red-800 text-white py-12 text-center shadow-inner">
-    <img src="https://images.unsplash.com/photo-1603344797030-b0a4fc05f75e" alt="Bell Church Logo" class="mx-auto w-32 h-32 rounded-full mb-4 shadow-lg border-4 border-yellow-300">
-    <h2 class="text-4xl font-bold mb-4">Celebrating Culture, Strength, and Tradition</h2>
-    <p class="max-w-2xl mx-auto text-lg">
-      The Bell Church Athletic Club is a proud bearer of Chinese cultural heritage. Through captivating performances and discipline-driven training, we inspire unity, energy, and respect for traditions passed down for generations.
+    <img src="bell church.jpg" alt="Bell Church Logo" class="mx-auto w-32 h-32 rounded-full mb-4 shadow-lg border-4 border-yellow-400">
+    <h2 class="text-4xl font-bold mb-4 text-yellow-300 drop-shadow-lg">Celebrating Culture, Strength, and Tradition</h2>
+    <p class="max-w-2xl mx-auto text-lg text-yellow-100">
+      The Bell Church Athletic Club proudly showcases Chinese heritage through lion dance, dragon dance, drumming, and martial arts.
     </p>
   </section>
 
@@ -40,8 +51,8 @@
   <main class="container mx-auto my-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-6">
 
     <!-- Lion Dance -->
-    <article class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition">
-      <img src="https://images.unsplash.com/photo-1598268121084-3e44d2a17e11" alt="Lion Dance" class="w-full h-48 object-cover rounded mb-3">
+    <article class="bg-white p-6 rounded-2xl shadow-xl border-2 border-yellow-400 fade-in hover:scale-105 hover:shadow-2xl hover:border-red-600 transition-transform duration-500">
+      <img src="lion dance.jpg" alt="Lion Dance" class="w-full h-52 object-cover rounded mb-3">
       <h2 class="text-2xl font-bold text-red-700 mb-2">Lion Dance (舞狮)</h2>
       <p class="text-gray-700 text-justify">
         The Lion Dance is one of the most iconic cultural traditions performed during festivals and grand celebrations. Dancers embody the movements of the lion with precision and energy, accompanied by the sound of drums, cymbals, and gongs. It is believed to chase away evil spirits and bring good fortune, prosperity, and happiness to the community. The lion’s lively expressions and playful gestures captivate audiences, making it a highlight of every cultural gathering.
@@ -49,37 +60,34 @@
     </article>
 
     <!-- Dragon Dance -->
-    <article class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition">
-      <img src="https://images.unsplash.com/photo-1544378730-8b5104b7c8bb" alt="Dragon Dance" class="w-full h-48 object-cover rounded mb-3">
+    <article class="bg-white p-6 rounded-2xl shadow-xl border-2 border-yellow-400 fade-in hover:scale-105 hover:shadow-2xl hover:border-red-600 transition-transform duration-500 delay-100">
+      <img src="Dragon Dance.jpg" alt="Dragon Dance" class="w-full h-52 object-cover rounded mb-3">
       <h2 class="text-2xl font-bold text-red-700 mb-2">Dragon Dance (舞龙)</h2>
       <p class="text-gray-700 text-justify">
         The Dragon Dance is a breathtaking performance symbolizing strength, power, and wisdom. The dragon, an important figure in Chinese mythology, is brought to life by a team of skilled performers who move in perfect harmony. The undulating body of the dragon, paired with rhythmic drumbeats, creates an awe-inspiring spectacle. This dance is performed to invoke prosperity, harmony, and protection, often during Lunar New Year and other significant festivities.
-      </p>
     </article>
 
     <!-- Drum Exhibition -->
-    <article class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition">
-      <img src="https://images.unsplash.com/photo-1599443144630-3d6ebbb3b5ba" alt="Drum Exhibition" class="w-full h-48 object-cover rounded mb-3">
+    <article class="bg-white p-6 rounded-2xl shadow-xl border-2 border-yellow-400 fade-in hover:scale-105 hover:shadow-2xl hover:border-red-600 transition-transform duration-500 delay-200">
+      <img src="drum.webp" alt="Drum Exhibition" class="w-full h-52 object-cover rounded mb-3">
       <h2 class="text-2xl font-bold text-red-700 mb-2">Drum Exhibition (鼓展)</h2>
       <p class="text-gray-700 text-justify">
-        The Drum Exhibition highlights the energy and power of traditional Chinese percussion instruments. Drums are more than instruments—they are the heartbeat of every performance. Each strike echoes discipline, unity, and heritage, energizing both performers and audiences. These exhibitions showcase the strength, timing, and passion of the drummers, creating an atmosphere of excitement and reverence for cultural roots.
-      </p>
+The Drum Exhibition highlights the energy and power of traditional Chinese percussion instruments. Drums are more than instruments—they are the heartbeat of every performance. Each strike echoes discipline, unity, and heritage, energizing both performers and audiences. These exhibitions showcase the strength, timing, and passion of the drummers, creating an atmosphere of excitement and reverence for cultural roots.      </p>
     </article>
 
     <!-- Martial Arts -->
-    <article class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition">
-      <img src="https://images.unsplash.com/photo-1554135429-76c84b2c98f9" alt="Martial Arts" class="w-full h-48 object-cover rounded mb-3">
+    <article class="bg-white p-6 rounded-2xl shadow-xl border-2 border-yellow-400 fade-in hover:scale-105 hover:shadow-2xl hover:border-red-600 transition-transform duration-500 delay-300">
+      <img src="martial arts.jpg" alt="Martial Arts" class="w-full h-52 object-cover rounded mb-3">
       <h2 class="text-2xl font-bold text-red-700 mb-2">Martial Arts (武术)</h2>
       <p class="text-gray-700 text-justify">
-        Martial Arts is not only about combat techniques but also about discipline, respect, and the pursuit of balance between mind and body. Students are trained to develop physical strength, flexibility, and endurance while embracing values such as humility, perseverance, and honor. As a cultural treasure, martial arts performances demonstrate both the beauty and intensity of traditional Chinese fighting styles, inspiring the next generation to uphold this time-honored tradition.
-      </p>
+Martial Arts is not only about combat techniques but also about discipline, respect, and the pursuit of balance between mind and body. Students are trained to develop physical strength, flexibility, and endurance while embracing values such as humility, perseverance, and honor. As a cultural treasure, martial arts performances demonstrate both the beauty and intensity of traditional Chinese fighting styles, inspiring the next generation to uphold this time-honored tradition.      </p>
     </article>
 
   </main>
 
   <!-- Footer -->
-  <footer class="bg-red-700 text-white text-center p-5 shadow-inner">
-    <p>&copy; 2025 Bell Church Athletic Club. All rights reserved.</p>
+  <footer class="bg-red-700 text-white text-center p-5 shadow-inner border-t-4 border-yellow-400">
+    <p class="text-yellow-200">&copy; 2025 Bell Church Athletic Club. All rights reserved.</p>
   </footer>
 
 </body>
